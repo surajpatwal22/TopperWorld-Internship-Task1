@@ -1,0 +1,202 @@
+body{
+    background-image: url(./images/bgimage.png);
+    background-size: 100% 90%;
+    height: 100vh;
+    width: 100vh;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow:auto;
+}
+nav{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    height: 10vh;
+    background-color: #242124;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.logo-sxn{
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: #ffffff;
+}
+.fa-solid{
+    align-items: center;
+    width: 3vw;
+    font-size: x-large;
+    cursor: pointer;
+}
+.logo-heading{
+    cursor: pointer;
+}
+.nav-items{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 40vw;
+    height: 10vh;
+}
+.list-items{
+    background-color: transparent ;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 10vw;
+    height: 4vh;
+    padding: 2px;
+    text-align: center;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    opacity: 80%;
+}
+
+.list-items:hover{
+    scale: 110%;
+    opacity: 100%   ;
+    cursor: pointer;
+}
+.heading1-bgsxn{
+    margin-top: 30vh;
+    margin-left: 10vw;
+    width: 80vw;
+    padding: 30px;  
+}
+.heading1{
+    font-size: 60px;
+    color: #ffffff;
+}
+.heading1-para{
+    color: #ffffff;
+    font-size: large;
+}
+.heading1-btn{
+    background-color: #6666ff;
+    padding: 8px;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 20px;
+}
+.heading1-btn:hover{
+background-color: #242124;
+scale: 110% ;
+}
+.heading2-bgsxn{
+    
+    margin-left: 10vw;
+    width: 80vw;
+    height: 20vh;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    position: relative;
+    top: 80px; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: #242124 solid 1px;
+
+}
+.heading2{
+    font-size: 40px;
+    color: #242124;
+}
+.heading2-btn{
+    background-color: #6666ff;
+    width: 10vw;
+    height: 6vh;
+    padding: 4px;
+    color: #ffffff;
+    border: 1px ;
+    border-radius: 10px;
+}
+.heading1-btn:hover{
+background-color: #242124;
+scale: 110% ;
+}
+
+.About{
+    margin-top: 34px;
+    padding-left: 9vw;
+    padding-top: 8vh;
+    width: 90vw;
+    height: auto;
+    background-image: linear-gradient(white , #555555);
+}
+.About-heading0{
+    padding-top: 40px;
+}
+.About-heading{
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-color: #242124 ;
+    /* text-align: center; */
+}
+.About-para{
+    width: 70vw;
+    font-size: medium;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.About-headig2{
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-color: #242124 ;
+}
+.About-headig3{
+    font-size: large;
+    font-family: cursive;
+    font-weight: 500;
+    text-decoration-line: underline;
+    text-decoration-color: #242124 ;
+    
+}
+/* property section starts here */
+.Property{
+    padding-left: 9vw;
+    padding-top: 8vh;
+    width: 90vw;
+    height: auto;
+    background-image: linear-gradient( #555555 , white  );
+    position: relative;
+    top: -16px;
+}
+.Property-heading{
+    text-align: center;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: auto;
+}
+.property-display{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.property-display1{
+    display: flex;
+    flex-direction: column;
+}
+.display-image{
+    width: 30vw;
+    height: 50vh;
+}
+.Property-price-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 30vw;
+    height: 10vh;
+}
