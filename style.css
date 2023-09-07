@@ -1,3 +1,28 @@
+/* Mobile Styles (up to 768px) */
+@media (max-width: 768px) {
+    /* Adjust styles for mobile devices */
+    /* For example, reduce font sizes and adjust margins */
+}
+
+/* Tablet Styles (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Adjust styles for tablets */
+    /* You can reorganize content, increase font sizes, etc. */
+}
+
+/* Laptop Styles (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* Adjust styles for laptops */
+    /* You can change column layouts, font sizes, and more */
+}
+
+/* Desktop Styles (1441px and above) */
+@media (min-width: 1441px) {
+    /* Adjust styles for desktops */
+    /* You can use wider layouts, larger fonts, etc. */
+}
+
+
 body{
     background-image: url(./images/bgimage.png);
     background-size: 100% 90%;
@@ -118,9 +143,9 @@ scale: 110% ;
     border: 1px ;
     border-radius: 10px;
 }
-.heading1-btn:hover{
+.heading2-btn:hover{
 background-color: #242124;
-scale: 110% ;
+scale: 105% ;
 }
 
 .About{
@@ -129,7 +154,7 @@ scale: 110% ;
     padding-top: 8vh;
     width: 90vw;
     height: auto;
-    background-image: linear-gradient(white , #555555);
+    background-image: linear-gradient(#f4f4f4 , #555555);
 }
 .About-heading0{
     padding-top: 40px;
@@ -169,7 +194,7 @@ scale: 110% ;
     padding-top: 8vh;
     width: 90vw;
     height: auto;
-    background-image: linear-gradient( #555555 , white  );
+    background-image: linear-gradient( #555555 , #f4f4f4  );
     position: relative;
     top: -16px;
 }
@@ -178,25 +203,212 @@ scale: 110% ;
     font-size: xx-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: auto;
+    color: #ffffff;
+    opacity: 80%;
+    transition: transform 0.5s;
 }
-.property-display{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.Property-heading:hover{
+    opacity: 100%;
+    scale: 105% ;
 }
-.property-display1{
+.Property-display{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+  gap: 20px; 
+}
+.Property-display1{
     display: flex;
     flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 40vh;
+    height: 50vh;
+    
 }
 .display-image{
-    width: 30vw;
-    height: 50vh;
+    width: 40vh;
+    height: 40vh;
+    transition: transform 0.2s;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.display-image:hover{
+    scale: 105%;
 }
 .Property-price-display{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 30vw;
+    width: 40vh;
     height: 10vh;
 }
+.Property-name-display{
+    line-height: 0.1;
+}
+.Property-amount-display{
+line-height: 0.2;
+}
+
+/* Contact Section */
+.Contact {
+    background-image: linear-gradient( #ffffff, #555555  );
+    padding: 30px 0;
+    text-align: center;
+    width: 99vw;
+    
+  }
+  
+  .Contact-heading {
+    margin-bottom: 20px;
+  }
+  
+  .Contact-heading h1 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .Contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  .contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #0056b3;
+  }
+.News-letter{
+    width: 99vw;
+    background-image: linear-gradient( #555555 , #ffffff  );
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+    
+
+}
+.News-letter-container{
+    background-color: #6666ff;
+    width: 66vw;
+    padding: 30px;
+    text-align: center;
+    border-radius: 40px;
+
+}
+.News-letter-heading{
+    color: #f4f4f4;
+    font-size: 56px;
+    font-weight: bolder;
+}
+.News-letter-para{
+    color: #f4f4f4;
+    opacity: 60%;
+}
+.News-letter-input{
+    background-color: #4d4dff;
+    padding: 10px;
+    border-radius: 20px;
+    border: #4d4dff solid ;
+    text-align: center;
+}
+.News-letter-btn{
+        background-color: #f4f4f4;
+        width: 10vw;
+        height: 6vh;
+        padding: 4px;
+        color: #4d4dff;
+        border: 1px ;
+        border-radius: 10px;
+}
+.News-letter-btn:hover{
+    background-color: #242124;
+    scale: 102% ;
+    }
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 98vw;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-info p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
