@@ -2,7 +2,7 @@
 
 body {
     background-image: url(./images/bgimage.png);
-    background-size: 100% 90%;
+    background-size: 102% 96%;
     height: 100vh;
     width: 100vh;
     background-repeat: no-repeat;
@@ -146,7 +146,7 @@ nav {
 }
 
 .About {
-    margin-top: 34px;
+    margin-top: 20px;
     padding-left: 9vw;
     padding-top: 8vh;
     width: 90vw;
@@ -908,4 +908,445 @@ nav {
 
 }
 
-@media (min-width: 542px) and (max-width: 768px) {}
+@media (min-width: 542px) and (max-width: 768px) {
+    body {
+        background-image: url(./images/bgimage.png);
+        background-size: 100% 100%;
+        height: 100vh;
+        width: 100vh;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+      .fa-solid {
+        align-items: center;
+        width: 2vw;
+        font-size: large;
+        cursor: pointer;
+    }
+    
+    .logo-heading {
+        cursor: pointer;
+        margin-left: 1.5rem;
+    } 
+    .nav-items a {
+        text-decoration: none;
+        color: #f4f4f4;
+        font-size: small;
+    }
+     .heading1-bgsxn {
+        margin-top: 30vh;
+        margin-left: 10vw;
+        width: 80vw;
+        padding: 30px;
+    }
+    
+    .heading1 {
+        font-size: 54px;
+        color: #ffffff;
+    }
+    .heading2-bgsxn {
+    
+        margin-left: 10vw;
+        width: 80vw;
+        height: 20vh;
+        padding: 0px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        position: relative;
+        top: 80px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border: #242124 solid 1px;
+    
+    }
+    
+    .heading2 {
+        font-size: 26px;
+        color: #242124;
+    }
+    
+    .heading2-btn {
+        background-color: #6666ff;
+        width: 14vw;
+        height: 6vh;
+        padding: 4px;
+        color: #ffffff;
+        border: 1px;
+        border-radius: 10px;
+    }
+    
+    .About {
+        margin-top: 40px;
+        padding-left: 9vw;
+        padding-top: 8vh;
+        width: 91vw;
+        height: auto;
+        background-image: linear-gradient(#f4f4f4, #555555);
+    }
+    /* property section starts here */
+    .Property {
+        padding-left: 9vw;
+        padding-top: 8vh;
+        width: 91vw;
+        height: auto;
+        background-image: linear-gradient(#555555, #f4f4f4);
+        position: relative;
+        top: -16px;
+    }
+    
+    .Property-display {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Create 3 equal columns */
+        gap: 20px;
+    }
+    
+    .Property-display1 {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        overflow: hidden;
+        width: 50vh;
+        height: 50vh;
+    
+    }
+    
+    .display-image {
+        width: 50vh;
+        height: 40vh;
+        transition: transform 0.2s;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+    .display-image:hover {
+        scale: 105%;
+    }
+    
+    .Property-price-display {
+        display: flex;     
+        justify-content: space-between;
+        align-items: center;
+        width: 40vh;
+        height: 10vh;
+    }
+    
+    .Property-name-display {
+        line-height: 0;
+    }
+    
+    .Property-amount-display {
+        line-height: 0.1;
+    }
+    
+    
+    /* Contact Section */
+    .Contact {
+        background-image: linear-gradient(#ffffff, #555555);
+        padding: 30px 0;
+        text-align: center;
+        width: 100vw;
+    
+    }
+    
+    .Contact-form {
+        max-width: 600px;
+        width: 80vw;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #f4f4f4;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+  
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #333;
+    }
+    
+    .form-group textarea {
+        resize: vertical;
+    }  
+    .News-letter {
+        width: 100vw;
+        background-image: linear-gradient(#555555, #ffffff);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+    
+    .News-letter-container {
+        background-color: #6666ff;
+        width: 60vw;
+        padding: 30px;
+        text-align: center;
+        border-radius: 40px;
+    
+    }
+    
+    .News-letter-heading {
+        color: #f4f4f4;
+        font-size: 52px;
+        font-weight: bolder;
+    }
+
+    /* Footer Styles */
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        width: 100vw;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-text{
+        margin-left: 20px;
+    }
+    
+
+
+}
+
+/* Tablet Styles (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+     
+    .logo-heading {
+        cursor: pointer;
+        margin-left: 1rem;
+    } 
+    .heading1 {
+        font-size: 56px;
+        color: #ffffff;
+    }
+
+    .heading2 {
+        font-size: 30px;
+        color: #242124;
+    }
+    
+    .heading2-btn {
+        background-color: #6666ff;
+        width: 14vw;
+        height: 6vh;
+        padding: 4px;
+        color: #ffffff;
+        border: 1px;
+        border-radius: 10px;
+    }
+    
+    .About {
+        margin-top: 40px;
+        padding-left: 9vw;
+        padding-top: 8vh;
+        width: 91vw;
+        height: auto;
+        background-image: linear-gradient(#f4f4f4, #555555);
+    }
+    /* property section starts here */
+    .Property {
+        padding-left: 9vw;
+        padding-top: 8vh;
+        width: 91vw;
+        height: auto;
+        background-image: linear-gradient(#555555, #f4f4f4);
+        position: relative;
+        top: -16px;
+    }
+    
+    .Property-display {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Create 3 equal columns */
+        gap: 10px;
+    }
+    /* Contact Section */
+    .Contact {
+        background-image: linear-gradient(#ffffff, #555555);
+        padding: 30px 0;
+        text-align: center;
+        width: 100vw;
+    
+    }
+    
+    .Contact-form {
+        max-width: 600px;
+        width: 80vw;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #f4f4f4;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+  
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #333;
+    }
+    .News-letter {
+        width: 100vw;
+        background-image: linear-gradient(#555555, #ffffff);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        width: 100vw;
+    }
+    .logo-text{
+        margin-left: 20px;
+    }
+    
+}
+/* Laptop Styles (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1441px) {
+    .logo-heading {
+        cursor: pointer;
+        margin-left: 1.2rem;
+    } 
+    .heading1 {
+        font-size: 68px;
+        color: #ffffff;
+    }
+
+    .heading2 {
+        font-size: 40px;
+        color: #242124;
+    }
+    
+    .heading2-btn {
+        background-color: #6666ff;
+        width: 14vw;
+        height: 6vh;
+        padding: 4px;
+        color: #ffffff;
+        border: 1px;
+        border-radius: 10px;
+    }
+    
+    .About {
+        margin-top: 40px;
+        padding-left: 9vw;
+        padding-top: 8vh;
+        width: 91vw;
+        height: auto;
+        background-image: linear-gradient(#f4f4f4, #555555);
+    }
+    /* property section starts here */
+    .Property {
+        padding-left: 9vw;
+        padding-top: 8vh;
+        width: 91vw;
+        height: auto;
+        background-image: linear-gradient(#555555, #f4f4f4);
+        position: relative;
+        top: -16px;
+    }
+    .Property-heading {
+        text-align: center;
+        font-size: 38px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: auto;
+        color: #ffffff;
+        opacity: 80%;
+        transition: transform 0.5s;
+    }
+    
+    .Property-display {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Create 3 equal columns */
+        gap: 20px;
+    }
+    .heading2-btn {
+        background-color: #6666ff;
+        width: 8vw;
+        height: 6vh;
+        padding: 4px;
+        color: #ffffff;
+        border: 1px;
+        border-radius: 10px;
+    }
+    
+    /* Contact Section */
+    .Contact {
+        background-image: linear-gradient(#ffffff, #555555);
+        padding: 30px 0;
+        text-align: center;
+        width: 100vw;
+    
+    }
+    
+    .Contact-form {
+        max-width: 600px;
+        width: 80vw;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #f4f4f4;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+  
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #333;
+    }
+    .News-letter {
+        width: 100vw;
+        background-image: linear-gradient(#555555, #ffffff);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        width: 100vw;
+    }
+    .logo-text{
+        margin-left: 20px;
+    }
+}
